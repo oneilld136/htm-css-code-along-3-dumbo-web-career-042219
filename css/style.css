@@ -1,0 +1,51 @@
+/* This is a comment*/
+<style>
+@import url('https://fonts.googleapis.com/css?family=Elsie');
+</style>
+
+
+/* CSS Syntax:
+
+selector {
+  property: value;
+  property: value;
+}
+
+*/
+/* Type selector */
+p { /* select all <p> */
+font-size: 1em; /* 16px, ?pt, 100%, 1em */
+line-height: 1.5;
+}
+figcaption {
+  /*font-weight: normal;
+  font-size: 0.75 em;
+  line-height: 1.5 em;
+  font-family: Georgia, "New Times Roman", serif;*/
+  font: normal 0.75 em/ 1.5 em Georgia, "New Times Roman", serif;
+  color: #777;
+  text-align: right;
+}
+
+/* Class selector (applied to as many elements as you like) */
+.milk-text {/* select elements with class="milk-text"*/
+font: bold 2.6em "Elsie Swash Caps",cursive;
+color: white;
+text-shadow: 0.2px 3 px #000;
+}
+
+/*ID selector (apply to one unique element per page) */
+#logo {/*select elements with id=logo*/
+background:aqua;
+}
+
+/*Decendent selector */ {
+#logo h1 {/*selects <h1> if inside the id="logo"*/
+font-family: "clicker script", cursive;
+
+}
+/*Psuedo Selector*/
+#details a:link
+  color:black;
+  text-decoration:none;
+}
